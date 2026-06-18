@@ -27,11 +27,24 @@ The tagline: **"Navigating the Future with Innovation"**
 ## Tech Stack
 
 ### Frontend
-![Frontend](image.png)
+| Technology | Purpose |
+|---|---|
+| React 18 | UI framework |
+| React Router DOM v7 | Client-side routing |
+| Axios | HTTP requests to backend |
+| Bootstrap 5 | Responsive layout and styling |
+| Material UI (MUI) v6 | UI components |
+| React Icons | Icon library (profile icon etc.) |
+| Google Translate Widget | Multi-language support |
 
 ### Backend
-![Backend](image-1.png)
-
+| Technology | Purpose |
+|---|---|
+| Node.js + Express | REST API server |
+| MongoDB + Mongoose | Database and ODM |
+| bcrypt | Password hashing |
+| JSON Web Token (JWT) | Stateless authentication |
+| CORS | Cross-origin request handling |
 ---
 
 ### Prerequisites
@@ -59,7 +72,13 @@ The backend runs on **http://localhost:5000**.
 
 **API Endpoints:**
 
-![alt text](image-2.png)
+| Method | Endpoint | Description | Auth Required |
+|---|---|---|---|
+| POST | `/register` | Register a new user | No |
+| POST | `/login` | Login and receive JWT | No |
+| GET | `/protected` | Test protected access | Yes (JWT) |
+| GET | `/user/name` | Fetch logged-in user's first name | Yes (JWT) |
+
 ---
 
 ### Frontend Setup
